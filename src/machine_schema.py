@@ -10,18 +10,18 @@ class MachineSchema(BaseModel):
 
     @field_validator("cpu")
     def cpu_must_be_positive(cls, value):
-        if value <= 0:
-            raise ValueError("CPU cores must be greater than 0")
+        if value <= 1:
+            raise ValueError("CPU cores must be greater than 1")
         return value
 
     @field_validator("ram")
     def ram_must_be_positive(cls, value):
-        if value <= 0:
-            raise ValueError("RAM must be greater than 0")
+        if value <= 1:
+            raise ValueError("RAM must be greater than 1")
         return value
 
     @field_validator("storage")
     def storage_must_be_positive(cls, value):
-        if value <= 0:
-            raise ValueError("Storage must be greater than 0")
+        if value <= 1:
+            raise ValueError("Storage must be greater than 1")
         return value

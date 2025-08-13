@@ -13,16 +13,27 @@ It also triggers a Bash script to **install and configure a service (Nginx)**, w
 ## 📂 Project Structure
 Infra_Project/
 ├── configs/ # Stores instance configuration files
+
 │ └── instances.json
+
 ├── logs/ # All logs stored here
+
 │ └── provisioning.log
+
 ├── scripts/ # Bash automation scripts
+
 │ └── install_service.sh
+
 ├── src/ # Python modules
+
 │ ├── machine.py
+
 │ └── machine_schema.py
+
 ├── infra_simulator.py # Main Python entry point
+
 ├── requirements.txt # Python dependencies
+
 └── README.md # This file
 
 ---

@@ -51,7 +51,7 @@ Infra_Project/
 
 1. **Clone the repository**
 ```bash
-git clone https://github.com/<your-username>/Infra_Project.git
+git clone https://github.com/momelllo/Infra_Project.git
 cd Infra_Project
 
 2. **Create and activate a virtual environment**

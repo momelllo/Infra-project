@@ -25,6 +25,8 @@ Infra_Project/
 ├── requirements.txt # Python dependencies
 └── README.md # This file
 
+---
+
 ## ⚙️ Requirements
 - **Python 3.8+**
 - **pip** (Python package manager)
@@ -48,6 +50,8 @@ source venv/bin/activate   # Linux / GitBash
 3. Install dependencies
 pip install -r requirements.txt
 
+---
+
 ## 🚀 Running the Project
 Run the main script:
 python infra_simulator.py
@@ -69,7 +73,8 @@ Steps:
 4. All logs (Python + Bash) are saved in logs/provisioning.log
 
 ---
-🗒️ Log Example (logs/provisioning.log)
+
+## 🗒️ Log Example (logs/provisioning.log)
 
 2025-08-13 14:55:02,457 - INFO - ============================================
 2025-08-13 14:55:02,457 - INFO - === Infrastructure Provisioning Tool Started ===
@@ -88,6 +93,8 @@ Nginx installation completed successfully.
 On Windows, the Bash script will run but fail to install Nginx — this is expected.
 
 On CentOS/Ubuntu, the script will attempt to install and start Nginx.
+
+---
 
 
 ✏️ by Michael W

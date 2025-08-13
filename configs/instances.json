@@ -1,0 +1,34 @@
+[
+    {
+        "name": "Adam",
+        "os": "CentOS",
+        "cpu": "3",
+        "ram": "4"
+    },
+    {
+        "name": "testMachine1",
+        "os": "CentOS",
+        "cpu": 2,
+        "ram": 4.0
+    },
+    {
+        "name": "goodName",
+        "os": "Ubuntu",
+        "cpu": 2,
+        "ram": 4.0
+    },
+    {
+        "name": "testMachine",
+        "os": "CentOS",
+        "cpu": 2,
+        "ram": 4.0,
+        "storage": 20.0
+    },
+    {
+        "name": "testName",
+        "os": "CentOS",
+        "cpu": 2,
+        "ram": 4.0,
+        "storage": 20.0
+    }
+]

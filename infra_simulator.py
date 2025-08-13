@@ -1,9 +1,13 @@
 import json
 import logging
 import subprocess
+import os
 from pydantic import ValidationError
 from src.machine import Machine
 from src.machine_schema import MachineSchema
+
+# Ensure logs directory exists
+os.makedirs("logs", exist_ok=True)
 
 # Logging setup
 logging.basicConfig(

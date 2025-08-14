@@ -13,27 +13,16 @@ It also triggers a Bash script to **install and configure a service (Nginx)**, w
 ## 📂 Project Structure
 Infra_Project/
 ├── configs/ # Stores instance configuration files
-
 │ └── instances.json
-
 ├── logs/ # All logs stored here
-
 │ └── provisioning.log
-
 ├── scripts/ # Bash automation scripts
-
 │ └── install_service.sh
-
 ├── src/ # Python modules
-
 │ ├── machine.py
-
 │ └── machine_schema.py
-
 ├── infra_simulator.py # Main Python entry point
-
 ├── requirements.txt # Python dependencies
-
 └── README.md # This file
 
 ---
@@ -49,44 +38,36 @@ Infra_Project/
 
 ## 📥 Setup Instructions
 
-1. **Clone the repository**
+### 1. Clone the repository
 ```bash
 git clone https://github.com/momelllo/Infra_Project.git
 cd Infra_Project
-
-2. **Create and activate a virtual environment**
+2. Create and activate a virtual environment
 python3 -m venv venv
 source venv/bin/activate   # Linux / GitBash
-
 3. Install dependencies
 pip install -r requirements.txt
-
----
-
-## 🚀 Running the Project
+🚀 Running the Project
 Run the main script:
 python infra_simulator.py
 
 Steps:
-1. The script will prompt you for:
-- Machine name
-- Operating system (CentOS or Ubuntu)
-- Number of CPU cores
-- RAM size (GB)
-- Storage size (GB)
+The script will prompt you for:
+Machine name
+Operating system (CentOS or Ubuntu)
+Number of CPU cores
+RAM size (GB)
+Storage size (GB)
 
-2. Input is validated using Pydantic. Invalid values will be rejected.
+Input is validated using Pydantic — invalid values will be rejected.
 
-3. If validation passes:
-- Machine details are saved to configs/instances.json
-- The Bash script scripts/install_service.sh runs to install Nginx
+If validation passes:
+Machine details are saved to configs/instances.json
+The Bash script scripts/install_service.sh runs to install Nginx
 
-4. All logs (Python + Bash) are saved in logs/provisioning.log
+All logs (Python + Bash) are saved in logs/provisioning.log
 
----
-
-## 🗒️ Log Example (logs/provisioning.log)
-
+🗒️ Log Example (logs/provisioning.log)
 2025-08-13 14:55:02,457 - INFO - ============================================
 2025-08-13 14:55:02,457 - INFO - === Infrastructure Provisioning Tool Started ===
 2025-08-13 14:55:02,458 - INFO - Machine created: TestVM (Ubuntu, CPU: 2, RAM: 4GB, Storage: 50GB)
@@ -98,14 +79,8 @@ Nginx installation completed successfully.
 2025-08-13 14:55:05,980 - INFO - Provisioning session completed
 2025-08-13 14:55:05,980 - INFO - ============================================
 
----
-
 🖥️ Testing Notes
 On Windows, the Bash script will run but fail to install Nginx — this is expected.
-
 On CentOS/Ubuntu, the script will attempt to install and start Nginx.
-
----
-
 
 ✏️ by Michael W
